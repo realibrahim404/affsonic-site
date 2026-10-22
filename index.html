@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AffSonic — affiliate content automation</title>
+    <meta
+      name="description"
+      content="AffSonic is a self-hosted tool that discovers affiliate products, drafts content for them and publishes it to Pinterest, Medium and WordPress."
+    />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --fg: #0f172a;
+        --muted: #4a5568;
+        --line: #e2e8f0;
+        --accent: #be123c;
+        --card: #f8fafc;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0b1120;
+          --fg: #e8edf6;
+          --muted: #9aa7bd;
+          --line: #1e293b;
+          --accent: #fb7185;
+          --card: #111a2c;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font:
+          16px/1.65 ui-sans-serif,
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 64px 16px 80px;
+      }
+      h1 {
+        font-size: clamp(1.9rem, 5vw, 2.6rem);
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        margin: 0 0 16px;
+      }
+      h2 {
+        font-size: 1.05rem;
+        margin: 40px 0 10px;
+      }
+      p {
+        color: var(--muted);
+        margin: 0 0 16px;
+      }
+      .lead {
+        font-size: 1.15rem;
+      }
+      .brand {
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        color: var(--fg);
+        text-decoration: none;
+      }
+      ul {
+        color: var(--muted);
+        padding-left: 1.2em;
+        margin: 0 0 16px;
+      }
+      li {
+        margin-bottom: 6px;
+      }
+      .note {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 16px 18px;
+        margin: 28px 0;
+      }
+      .note p:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        color: var(--accent);
+      }
+      footer {
+        border-top: 1px solid var(--line);
+        margin-top: 48px;
+        padding-top: 20px;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <a class="brand" href="/">AffSonic</a>
+      <h1>Affiliate content, from product to published post.</h1>
+      <p class="lead">
+        AffSonic is a self-hosted tool that finds affiliate products, drafts the copy and creatives
+        for them, and publishes the result to the channels you have connected.
+      </p>
+
+      <h2>What it does</h2>
+      <ul>
+        <li>Imports products from affiliate programmes such as Amazon Associates and AliExpress.</li>
+        <li>Drafts titles, descriptions and creatives for each product.</li>
+        <li>Publishes and schedules posts to Pinterest, Medium and WordPress.</li>
+        <li>Adds an affiliate disclosure to every post it creates.</li>
+        <li>Tracks what was published and how each post performed.</li>
+      </ul>
+
+      <h2>How it runs</h2>
+      <p>
+        AffSonic runs on the operator's own machine. There is no shared service and no public
+        sign-up: each installation connects only the accounts its own operator has authorised.
+      </p>
+
+      <div class="note">
+        <p>
+          <strong>Pinterest integration.</strong> AffSonic connects to Pinterest through the official
+          Pinterest API using OAuth. It reads the connected account's profile and boards and creates
+          Pins on that account. It never accesses another Pinner's private data, and access can be
+          revoked at any time from Pinterest's own
+          <a href="https://www.pinterest.com/settings/security/" rel="noreferrer noopener"
+            >security settings</a
+          >.
+        </p>
+      </div>
+
+      <h2>Contact</h2>
+      <p>
+        Operated by <strong>[YOUR NAME OR COMPANY]</strong>. Questions:
+        <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a>.
+      </p>
+
+      <footer><a href="./privacy.html">Privacy policy</a></footer>
+    </div>
+  </body>
+</html>

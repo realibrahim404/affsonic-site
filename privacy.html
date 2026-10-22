@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy policy — AffSonic</title>
+    <meta
+      name="description"
+      content="What data AffSonic accesses, where it is stored, who it is shared with, and how to revoke access or have it deleted."
+    />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --fg: #0f172a;
+        --muted: #4a5568;
+        --line: #e2e8f0;
+        --accent: #be123c;
+        --card: #f8fafc;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0b1120;
+          --fg: #e8edf6;
+          --muted: #9aa7bd;
+          --line: #1e293b;
+          --accent: #fb7185;
+          --card: #111a2c;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font:
+          16px/1.7 ui-sans-serif,
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 56px 16px 80px;
+      }
+      h1 {
+        font-size: clamp(1.7rem, 4.5vw, 2.2rem);
+        letter-spacing: -0.02em;
+        margin: 0 0 8px;
+      }
+      h2 {
+        font-size: 1.05rem;
+        margin: 36px 0 8px;
+      }
+      p,
+      li {
+        color: var(--muted);
+      }
+      p {
+        margin: 0 0 14px;
+      }
+      ul {
+        padding-left: 1.2em;
+        margin: 0 0 14px;
+      }
+      li {
+        margin-bottom: 6px;
+      }
+      .updated {
+        font-size: 0.9rem;
+        color: var(--muted);
+        margin-bottom: 28px;
+      }
+      .brand {
+        font-weight: 700;
+        color: var(--fg);
+        text-decoration: none;
+      }
+      a {
+        color: var(--accent);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 0 16px;
+        font-size: 0.95rem;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 9px 10px;
+        border-bottom: 1px solid var(--line);
+        vertical-align: top;
+      }
+      th {
+        color: var(--fg);
+        font-weight: 600;
+        white-space: nowrap;
+      }
+      td {
+        color: var(--muted);
+      }
+      .scroll {
+        overflow-x: auto;
+      }
+      footer {
+        border-top: 1px solid var(--line);
+        margin-top: 44px;
+        padding-top: 18px;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <a class="brand" href="./index.html">AffSonic</a>
+      <h1>Privacy policy</h1>
+      <p class="updated">Last updated 22 October 2026</p>
+
+      <p>
+        AffSonic is a self-hosted affiliate publishing tool operated by
+        <strong>[YOUR NAME OR COMPANY]</strong> ("we", "us") in [YOUR COUNTRY]. It runs on our own
+        computer and is not offered as a public service: there is no customer sign-up, and the only
+        accounts it connects to are the ones we authorise ourselves. This policy explains what data
+        the software accesses and what happens to it.
+      </p>
+
+      <h2>Data we access</h2>
+      <div class="scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Source</th>
+              <th>What is accessed</th>
+              <th>Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pinterest</td>
+              <td>
+                The connected account's username and account type, its list of boards, and the Pins
+                AffSonic itself creates, together with their statistics. Granted scopes are
+                <code>user_accounts:read</code>, <code>boards:read</code>,
+                <code>pins:read</code> and <code>pins:write</code>.
+              </td>
+              <td>To create Pins on the connected account and report how they performed.</td>
+            </tr>
+            <tr>
+              <td>Affiliate programmes</td>
+              <td>Public product data — titles, prices, images and affiliate links.</td>
+              <td>To build the posts.</td>
+            </tr>
+            <tr>
+              <td>Other publishing channels</td>
+              <td>The credentials we supply for our own Medium or WordPress accounts.</td>
+              <td>To publish the same content there.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        AffSonic does not access other Pinners' private boards or Pins, does not read anyone's
+        Pinterest inbox or followers, and does not run advertising campaigns.
+      </p>
+
+      <h2>Where it is stored</h2>
+      <p>
+        All of it is stored in a database file on the computer running AffSonic. OAuth access and
+        refresh tokens, API keys and channel passwords are encrypted at rest. Nothing is uploaded to
+        a hosted AffSonic service, because there isn't one.
+      </p>
+
+      <h2>Who it is shared with</h2>
+      <p>We do not sell, rent or trade any of this data. It is sent to third parties only here:</p>
+      <ul>
+        <li>
+          <strong>Pinterest</strong> — the Pins, images and text we publish, through the official
+          Pinterest API.
+        </li>
+        <li>
+          <strong>Anthropic</strong> — product titles and descriptions are sent to the Claude API to
+          draft post copy. Account credentials are never included.
+        </li>
+        <li>
+          <strong>Medium and WordPress</strong> — only when we have connected those channels, and
+          only the content we publish to them.
+        </li>
+      </ul>
+      <p>
+        Each of those services handles the data it receives under its own privacy policy. We
+        disclose data to anyone else only where the law requires it.
+      </p>
+
+      <h2>How long it is kept</h2>
+      <p>
+        Products, drafts and published posts are kept until we delete them. Analytics are kept for as
+        long as the installation is configured to retain them. Tokens are kept until the account is
+        disconnected.
+      </p>
+
+      <h2>Revoking access and deletion</h2>
+      <ul>
+        <li>
+          Revoke AffSonic's access to a Pinterest account at any time from Pinterest's own
+          <a href="https://www.pinterest.com/settings/security/" rel="noreferrer noopener"
+            >security settings</a
+          >. AffSonic can then no longer read or publish to it.
+        </li>
+        <li>
+          Disconnecting an account inside AffSonic deletes the stored tokens for it from the local
+          database.
+        </li>
+        <li>
+          To ask about data held about you, or to request its deletion, email
+          <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a>. We reply within 30 days.
+        </li>
+      </ul>
+
+      <h2>Affiliate disclosure</h2>
+      <p>
+        Posts published by AffSonic contain affiliate links, and carry a disclosure saying so. We may
+        earn a commission on qualifying purchases made through them.
+      </p>
+
+      <h2>Children</h2>
+      <p>AffSonic is not intended for use by anyone under 13, and we do not collect their data.</p>
+
+      <h2>Changes</h2>
+      <p>
+        If this policy changes we update the date at the top of this page. Material changes will be
+        described here rather than made silently.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        <strong>[YOUR NAME OR COMPANY]</strong>, [YOUR COUNTRY] —
+        <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a>
+      </p>
+
+      <footer><a href="./index.html">Back to AffSonic</a></footer>
+    </div>
+  </body>
+</html>
